@@ -1,0 +1,140 @@
+
+
+وصلت : APIs in GCP
+
+# ماذا تعني واجهة برمجة التطبيقات ؟
+API => Application Programming Interfaces
+
+API => gives developers access to computing resources and data.
+
+GUI => graphical user interface .
+
+GCP => Google Cloud Platform .
+
+البرامج التي توفر للمطورين إمكانية الوصول إلى موارد وبيانات الحوسبة , بحيث يمكن للمطورين دمج الأدوات والخدمات المتخصصة .
+
+# يشمل التالي .
+
+1- services .
+
+2- libraries .
+
+
+سوف نحتاج إلى Cloud Storage API كوسيلة لفهم مبادئ المفاتيح , و الهندسة المعمارية و المصادقة .
+
+
+# يجب فهم ماهية المصطلحات التالية :
+
+### ما هو Google APIs ؟
+
+هو ما سوف ندرسه الآن .
+
+### ما هو API architecture ؟
+
+API solution architecture explains the components and their relations within the software solution.
+
+API architecture may refer to the technical architecture of the API platform .
+
+
+### ما هو HTTP protocol and methods ؟
+
+هو الطريقة الرئيسة والأكثر انتشاراً لنقل البيانات في الشبكة
+
+
+### ما هو Endpoints ؟
+
+هي نقاط وصول إلى البيانات أو موارد الحوسبة المستضافة على الخادم .
+
+تتم إضافة نقاط النهاية إلى عنوان URL الأساسي لواجهة برمجة التطبيقات .
+https://www.knows1.com/?id=1
+https://www.knows1.com/name
+https://www.knows1.com/verb
+تستخدم واجهات برمجة التطبيقات طرق HTTP للتفاعل مع البيانات أو خدمات الحوسبة المستضافة على الخادم.
+
+هذه الطرق غير مجدية إذا لم تكن هناك طريقة للوصول إلى موارد محددة بتناسق
+
+تستخدم واجهات برمجة التطبيقات قنوات اتصال تسمى نقاط النهاية حتى يتمكن العملاء من الوصول إلى الموارد التي يحتاجون إليها دون تعقيد أو عدم انتظام.
+
+
+### ما هو  REST (Representational State Transfer) and RESTful APIs ؟
+
+رست طريقة من طرائق الوصل بين الحواسيب عبر الإنترنت ,
+
+تستخدم طلبات HTTP للوصول إلى بيانات GET و PUT و POST و DELETE.
+
+
+### ما هو JSON (JavaScript Object Notation) ؟
+
+تستخدم لتمثيل البيانات و تبادلها بين الأنظمة البرمجية المختلفة.
+الجزءان الأساسيان اللذان يشكلان JSON هما المفاتيح Keys والقيم Values.
+
+### ما هو API authentication services ؟
+
+تشير مصادقة الخدمة إلى عملية التحقق من الهوية من مزود الخدمة إلى المستخدم .
+
+### API Library
+
+[Go to API Library ](https://console.cloud.google.com/apis/library)
+[API Dashboard](https://console.cloud.google.com/apis/dashboard)= Traffic + Errors
+
+### API Architecture
+> smartphone, laptop خادم العميل Client-server model
+
+هي مجموعة من الأساليب التي تسمح للبرامج بالتواصل مع بعضهم البعض , تحتاج البرامج إلى الالتزام ببروتوكول واضح يحكم نقل وتفسير البيانات.
+
+API_($protocol){
+[Clients==requests,responses] [<=internet=>] [server==(interpret)responses,requests]
+};
+
+Client-server model: => computing device (smartphone, laptop)
+
+internet <=[channel]=> transmit requests and responses
+
+server has data [ computing resources ]={interpret}
+
+
+### HyperText Transfer Protocol HTTP
+
+ينظم الارسال و الاستقبال بين العميل و السيرفر .
+
+ملاحظة : رغم تعدد وجهات برمجة التطبيقات و التي تفوق المئات في عددها أنها جميها تستخدم ذات البروتوكول و الطرق .
+
+transmitting client requests to servers
+
+### request methods
+
+طرق الطلبات .
+
+GET, POST, PUT, DELETE.
+
+
+1- GET = fetch data from a server .
+
+2- PUT = replaces existing data and creates data .
+
+3- POST = create ([recommend] POST => create ,PUT => update )
+
+4- DELETE = remove data .
+
+### Endpoints
+
+https://www.example.com/?id=1
+https://www.example.com/name
+https://www.example.com/verb
+
+
+### RESTful - Representational State Transfer
+
+RESTful APIs use either XML or JSON
+
+- Headers HTTP request
+
+- Body send to a server.
+
+Body => JSON or XML
+
+https://www.googleapis.com/apiName/apiVersion/resourcePath?parameters
+
+JSON => JavaScript Object Notation
+
+المعظم يستخدم JSON لانه أخف و أسهل للقراءة .

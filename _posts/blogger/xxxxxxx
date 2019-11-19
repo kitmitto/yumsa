@@ -1,0 +1,83 @@
+1- الخام هو التالي .
+<html>
+              <head>
+                  <title>Title of Blog</title>
+              </head>
+              <body>
+                  <p>Hello World</p>
+              </body>
+          </html>
+
+
+2- نحن بحاجة  skin .
+- اين
+
+<head>
+<b:skin><![CDATA[
+          /****CSS CODE*****/
+          ]]></b:skin>
+</head>
+
+# الاقسام و الادوات .
+
+3- اضافة قسم section in body .
+<b:sectioالعناصرn > هناالاداة</b:section>
+
+<body>
+<b:section id="hello" class="hello"></b:section>
+</body>
+
+
+4- أضافة أداة داخل القسم section for blog .
+
+<b:section class='main' id='main' showaddelement='yes'>
+          <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'/>
+          </b:section>
+
+
+## فهم الاقسام و الادوات .
+
+حاوية = قسم = اداة .
+
+1- section = القسم
+
+2- widget = الاداة
+
+3- locked = هل يمكن نقل الاداة أو لا
+
+1- showaddelement'yes or no'  هل من الممكن أضافة المزيد من العناصر أو لا في لوحة القيادة للقسم
+
+<div>
+<b:section class='main' id='main' showaddelement='yes'>
+          <b:widget id='Blog1' locked='false' title='Blog Posts' type='Blog' version='1'/>
+          </b:section>
+</div>
+
+#### ATTRIBUTES OF SECTION TAG
+
+id	Unique name. Only letters and numbers are allowed. Example: header, navbar, sidebar, footer etc.	Required	Determining and customizing section with id.
+
+class	Same as id.	Optional	Determining and customizing section with class.
+
+maxwidgets	In numbers. Example: 1, 2, 3, 10 etc.	Optional	How much widgets we want to keep within this section.
+
+showaddelement	Values of this are in Boolean. Yes and No.	Optional	If yes then the section will allow to add gadgets as widget, otherwise none.
+
+growth	horizontal and vertical.	Optional	If vertical then section will be arranged side-by-side. Othewise stacked.
+
+
+####
+id	Unique name. Only letters and numbers are allowed. Example: header, navbar, sidebar, footer etc.	Required	Determining and customizing section with id.
+
+type	Header, Blog, Profile, PageList, AdSense, Attribution, HTML	Required	Define the type of widget.
+
+locked	yes, no	Optional	If yes then you can't delete or move this widget.
+
+title	Put any title name. Example: Tools, Advertisement, Lists etc.	Optional	Show the title of this widget.
+
+pageType	all, archive, main, item, static, all	Optional	Define the page type of widget.
+
+mobile	yes, no, default	Optional	If yes, then the widget will be shown on mobile device.
+
+
+وصلت : HOW TO MAKE BLOGGER MOBILE RESPONSIVE MENU

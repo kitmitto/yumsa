@@ -1,0 +1,64 @@
+# Compute Engine
+
+*************************************
+1- CONSOLE 2- GCLOUD 3- API
+*************************************
+
+### create and run virtual machines
+
+1- [Select or create project.](https://console.cloud.google.com/projectselector2/home)
+
+2- [Create a virtual machine instance](https://console.cloud.google.com/compute/)
+
+a- [Boot disk]
+
+- Select an image => boot disk image .
+- snapshot to create a boot disk => boot disk snapshot .
+- attach an existing disk => Existing disks.
+
+regular image or a Shielded VM image ?
+
+-Shielded => security features .
+
+3- Install or update [ gcloud ](https://fragen.knows1.com/cloud/cloud.google-gcloud-compute/)
+
+4- Set a default region and zone.
+
+### Creating an instance from an image
+
+- public image => communities . === OS image von Boot disk
+
+- Custom images =>  You can create a custom image .
+
+*** If you choose local SSD storage for your instance, you can't Shielded VM .
+
+1- [go](https://console.cloud.google.com/compute/instances)
+
+
+##################################
+1- Creating an instance from a public image => CONSOLE
+2- Creating an instance from a custom image => CONSOLE
+3- Creating an instance with an image shared with you => CONSOLE
+4- Creating a VM instance from a snapshot => CONSOLE
+5- Restore non-boot snapshots to a new instance => CONSOLE
+6- Creating an instance from a container image => CONSOLE
+7- Creating an instance with access to other GCP Services => CONSOLE
+**************************************************************
+1- Creating an instance from a public image
+2- Creating an instance from a custom image
+3- Creating an instance with an image shared with you
+4- Creating a VM instance from a snapshot
+5- Restore non-boot snapshots to a new instance
+6- Creating an instance from a container image
+7- Creating an instance with access to other GCP Services
+**************************************************************
+1- Creating an instance from a public image
+2- Creating an instance from a custom image
+3- Creating an instance with an image shared with you
+4- Creating a VM instance from a snapshot
+5- Restore non-boot snapshots to a new instance
+6- Creating an instance from a container image
+7- Creating an instance with access to other GCP Services
+##################################
+
+statement autocompletion : الإكمال التلقائي

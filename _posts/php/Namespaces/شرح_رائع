@@ -1,0 +1,95 @@
+A namespace allows you to place a bunch of code under a name and not have any naming conflicts with classes, functions and constants. It allows your code to live in that namespace. PHP uses the somewhat controversial character \ to show namespace levels.Namespacing does for functions and classes what scope does for variables. It allows you to use the same function or class name in different parts of the same program without causing a name collision.
+
+
+
+In simple terms, think of a namespace as a person's surname. If there are two people named "John" you can use their surnames to tell them apart.
+
+How do we solve having two output() functions? Simple. We stick each output() function in its own namespace.
+
+That would look something like this:
+
+namespace MyProject;
+function output() {
+    # Output HTML page
+    echo 'HTML!';
+}
+namespace RSSLibrary;
+function output(){
+    # Output RSS feed
+    echo 'RSS!';
+}
+Later when we want to use the different functions, we'd use:
+
+\MyProject\output();
+\RSSLibrary\output();
+Or we can declare that we're in one of the namespaces and then we can just call that namespace's output():
+
+namespace MyProject;
+output(); # Output HTML page
+\RSSLibrary\output();
+
+
+Create one file name like below and add source code same like:-
+
+Helplazy.php
+<?php
+namespace Helplazy;
+class A // class
+{
+    public function add()
+    {
+        echo "A class Method call";
+    }
+}
+class B // class
+{
+    public function sub()
+    {
+        echo "B class Method call";
+    }
+}
+function fun_A() // Core function
+{
+    echo "Function one call";
+}
+function fun_B() // Core function
+{
+    echo "Function two call";
+}
+const __XYZCNTNAME='Constant one call'; // Core constant
+const __XYZCNTNAMEB='Constant two call'; // Core constant
+Now create another file in which we have to use those method,function and constants Like below
+
+index.php
+1) Namespace
+
+require_once 'Helplazy.php';
+// Now first use Namespace
+$obj=new Helplazy\A;
+echo $obj->add(); // Method call - will return A class Method call
+
+echo Helplazy\fun_A(); // Function call
+
+echo Helplazy\__XYZCNTNAME; // Constant call
+2) Use
+
+use Helplazy\A as x; // x is alias
+$obj=new x;
+echo $obj->add();
+
+use function Helplazy\fun_A as fun_ABC; // fun_ABC is alias of function
+echo fun_ABC();
+
+use const Helplazy\__XYZCNTNAME as XN; // XN is alias of constant
+echo XN;
+3) group use
+
+use Helplazy\{A, B as sub};
+$obj=new sub;
+echo $obj->sub();
+
+use function Helplazy\{fun_B as B};
+echo B();
+
+use const Helplazy\{__XYZCNTNAME, __XYZCNTNAMEB as cb};
+echo __XYZCNTNAME;

@@ -1,0 +1,44 @@
+https://google.qwiklabs.com/quests/31?
+
+# Virtual Private Cloud
+
+### VPC => Virtual Private Cloud .
+
+
+#  Virtual Private Cloud => VPC .
+
+ provides networking functionality to Compute [VM][GKE][AE] .
+
+# create & modify & delete =>[VPC]
+
+- auto mode
+
+- custom mode
+
+ > custom mode networks are better suited
+
+auto mode : console
+
+
+- ينشئ نطاق فرعي واحد لكل منطقة و أي شبكة فرعية جديدة تضاف لهم .
+
+
+1. [=>](https://console.cloud.google.com/networking/)
+
+2. [=>](https://console.cloud.google.com/networking/networks/add)
+
+3. Name
+
+4. Subnet creation mode [Automatic]
+
+5- Firewall rules : You can after (you can manage all firewall rules on the Firewall rules page.)
+
+6- Dynamic routing mode :
+
+7- DNS server policy => Optional .
+
+8- Create .
+
+[GCLOUD-API](https://cloud.google.com/vpc/docs/using-vpc#create-auto-network)
+
+وصلت [Creating a custom mode network]

@@ -1,0 +1,55 @@
+- نحن في التدريب هنا : https://google.qwiklabs.com/focuses/563?parent=catalog
+
+- نحن بجاجة فهم التالي قبل الإكمال : https://cloud.google.com/vpc/docs/
+
+
+# Cloud Shell
+
+البلدان : لها عدة مناطق .
+
+$ gcloud config set project PROJECT_ID
+
+
+$ gcloud config unset project
+
+gcloud  part of the Google Cloud SDK
+
+
+ # Set default values in environment variables
+# أضبط متغيرات البيئة البلد و المنظقة .
+
+1- export PROJECT_ID=<your_project_ID>
+
+2- export ZONE=<your_zone>
+
+# تحقق من صحة التكوين
+
+echo $PROJECT_ID
+echo $ZONE
+
+
+### عندما حاولت أنشاء المثيل من خلال الأمر التالي .
+
+$ gcloud compute instances create knows3 --machine-type n1-standard-2 --zone $ZONE
+
+
+### واجهت الخطأ التالي .
+
+
+
+Could not fetch resource:
+ - Invalid value for field 'resource.networkInterfaces[0]': '{  "network":
+
+### كان لا بد من فهم التالي :
+
+#### [VPC = A Virtual Private Cloud network, sometimes just called a "network,"](https://cloud.google.com/vpc/docs/)
+
+### في حال كنت في عجلة من أمرك أقرأ التالي .
+
+[Using VPC networks](https://cloud.google.com/vpc/docs/using-vpc#viewing-networks)
+
+
+
+### لمشاهدة الشبكات أذهب الي التالي :
+
+https://console.cloud.google.com/networking/networks/list?project=[ID]

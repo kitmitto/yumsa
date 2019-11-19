@@ -1,0 +1,42 @@
+نحن في : https://book.cakephp.org/3/en/intro.html
+
+عند
+\\\
+use Cake\ORM\TableRegistry;
+
+// Prior to 3.6 use TableRegistry::get('Users')
+$users = TableRegistry::getTableLocator()->get('Users');
+$query = $users->find();
+foreach ($query as $row) {
+    echo $row->username;
+}
+
+\\\\
+
+
+From PHP7 onwards, a single use statement can be used to import Classes, functions and constants from same namespace instead of multiple use statements.
+
+   // PHP 7+ code
+   use com\tutorialspoint\{ClassA, ClassB, ClassC as C};
+   use function com\tutorialspoint\{fn_a, fn_b, fn_c};
+   use const com\tutorialspoint\{ConstA, ConstB, ConstC};
+
+-------------------------------------------------------------
+
+
+If you need to order your code into namespaces, just use the keyword namespace:
+
+file1.php
+
+namespace foo\bar;
+In file2.php
+
+$obj = new \foo\bar\myObj();
+You can also use use. If in file2 you put
+
+use foo\bar as mypath;
+
+you need to use mypath instead of bar anywhere in the file:
+
+$obj  = new mypath\myObj();
+Using use foo\bar; is equal to use foo\bar as bar;.
