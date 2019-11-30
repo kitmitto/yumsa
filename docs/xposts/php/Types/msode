@@ -1,0 +1,99 @@
+<?php
+$a = 1;  // $foo is string (ASCII 49)
+$b = 2.5;   // $foo is now an integer (2)
+$c = "a";  // $foo is now a float (2.6)
+$d = false; // $foo is integer (50)
+$f = true;     // $foo is integer (50)
+$g = $most = array(1, 1.2, "a", true, false);
+var_dump($a, $b, $c, $d, $f, $g);
+?>
+
+
+Booleans
+Integers
+Floating point numbers
+Strings
+Arrays
+Iterables
+Objects
+Resources
+NULL
+Callbacks / Callables
+Pseudo-types and variables used in this documentation
+Type Juggling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+لتحويل قيمة صراحة إلى منطقية يمكن استخدم  bool = boolean ,
+
+
+
+
+#### Iterables
+
+يقبل تنفيذ كل من array و object كلا هذين النوعين قابلان للتكرار باستخدام foreach
+والفكرة هي استخدامه بمثابة إعلان نوع على معلمة أو إرجاع نوع يشير إلى قيمة iterable
+
+
+
+
+<?php
+
+function foo(iterable $users) {
+    foreach ($users as $user) {
+echo
+    }
+}
+
+?>
+
+
+
+{% if users is iterable %}
+    {% for user in users %}
+        Hello {{ user }}!
+    {% endfor %}
+{% else %}
+    {# users is probably a string #}
+    Hello {{ users }}!
+{% endif %}
+
+
+# ما هو yield ؟
+
+هي كلمة مفتاحية لإرجاع البيانات من وظيفة المولد [Generator](https://stackoverflow.com/questions/17483806/what-does-yield-mean-in-php)
+
+قلب وظيفة المولد هي الكلمة الرئيسية yield , تشبه return , إلا أنه بدلا من وقف تنفيذ الوظيفة والعودة ,yield بدلا من ذلك يوفر قيمة للرمز حلقات زيادة المولد , توقف تنفيذ وظيفة المولد.
+
+راجع : https://medium.com/tech-tajawal/use-memory-gently-with-yield-in-php-7e62e2480b8d
+
+<?php
+
+$generator = function() {
+    yield 1;
+    yield 2;
+    yield 3;
+};
+
+$array = [1, 2, 3];
+
+$function = function(iterable $iterable) : void {
+    foreach ($iterable as $int) {
+        echo $int . PHP_EOL;
+    }
+};
+
+$function($generator());
+$function($array);

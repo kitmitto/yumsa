@@ -1,0 +1,426 @@
+# main links
+#main:
+#  - title: "Quick-Start Guide"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  # - title: "About"
+  #   url: https://mmistakes.github.io/minimal-mistakes/about/
+  # - title: "Sample Posts"
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+main:
+  - title: "Blog"
+    url: /blog/
+  - title: "Tags"
+    url: /tags/
+  - title: "About"
+    url: /about/
+
+  - title: "E-php"
+    url: /knows2
+
+
+# _data/navigation.yml
+
+docs:
+  - title: Getting Started
+    children:
+      - title: "Quick-Start Guide"
+        url: /docs/quick-start-guide/
+      - title: "Structure"
+        url: /docs/structure/
+      - title: "Installation"
+        url: /docs/installation/
+      - title: "Upgrading"
+        url: /docs/upgrading/
+
+  - title: Customization
+    children:
+      - title: "Configuration"
+        url: /docs/configuration/
+      - title: "Navigation"
+        url: /docs/navigation/
+      - title: "UI Text"
+        url: /docs/ui-text/
+      - title: "Authors"
+        url: /docs/authors/
+      - title: "Layouts"
+        url: /docs/layouts/
+
+  - title: Content
+    children:
+      - title: "Working with Posts"
+        url: /docs/posts/
+      - title: "Working with Pages"
+        url: /docs/pages/
+      - title: "Working with Collections"
+        url: /docs/collections/
+      - title: "Helpers"
+        url: /docs/helpers/
+      - title: "Utility Classes"
+        url: /docs/utility-classes/
+
+  - title: Extras
+    children:
+      - title: "Stylesheets"
+        url: /docs/stylesheets/
+      - title: "JavaScript"
+        url: /docs/javascript/
+
+########################
+# _data/navigation.yml
+foo:
+  - title: "Frage 1 -> 10 "
+    url: /#/
+    children:
+      - title: "frage 1 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-01/
+      - title: "frage 2 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-02/
+      - title: "frage 3 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-03/
+      - title: "frage 4 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-04/
+      - title: "frage 5 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-05/
+      - title: "frage 6 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-06/
+      - title: "frage 7 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-07/
+      - title: "frage 8 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-08/
+      - title: "frage 9 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-09/
+      - title: "frage 10 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-10/
+
+  - title: "Frage 10 -> 20"
+    url: /#/
+    children:
+      - title: "frage 11 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-11/
+      - title: "frage 12 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-12/
+      - title: "frage 13 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-13/
+      - title: "frage 14 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-14/
+      - title: "frage 15 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-15/
+      - title: "frage 16 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-16/
+      - title: "frage 17 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-17/
+      - title: "frage 18 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-18/
+      - title: "frage 19 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-19/
+      - title: "frage 20 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-20/
+
+  - title: "Frage 20 -> 30"
+    url: /#/
+    children:
+      - title: "frage 21 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-21/
+      - title: "frage 22 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-22/
+      - title: "frage 23 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-23/
+      - title: "frage 24 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-24/
+      - title: "frage 25 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-25/
+      - title: "frage 26 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-26/
+      - title: "frage 27 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-27/
+      - title: "frage 28 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-28/
+      - title: "frage 29 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-29/
+      - title: "frage 30 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-30/
+
+
+
+########################
+# _data/navigation.yml
+foo1:
+  - title: "Frage 31 -> 40 "
+    url: /#/
+    children:
+      - title: "frage 31 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-31/
+      - title: "frage 32 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-32/
+      - title: "frage 33 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-33/
+      - title: "frage 34 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-34/
+      - title: "frage 35 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-35/
+      - title: "frage 36 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-36/
+      - title: "frage 37 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-37/
+      - title: "frage 38 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-38/
+      - title: "frage 39 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-39/
+      - title: "frage 40 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-40/
+
+  - title: "Frage 41 -> 50"
+    url: /#/
+    children:
+      - title: "frage 41 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-41/
+      - title: "frage 42 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-42/
+      - title: "frage 43 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-43/
+      - title: "frage 44 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-44/
+      - title: "frage 45 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-45/
+      - title: "frage 46 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-46/
+      - title: "frage 47 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-47/
+      - title: "frage 48 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-48/
+      - title: "frage 49 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-49/
+      - title: "frage 50 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-50/
+
+  - title: "Frage 51 -> 60"
+    url: /#/
+    children:
+      - title: "frage 51 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-51/
+      - title: "frage 52 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-52/
+      - title: "frage 53 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-53/
+      - title: "frage 54 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-54/
+      - title: "frage 55 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-55/
+      - title: "frage 56 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-56/
+      - title: "frage 57 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-57/
+      - title: "frage 58 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-58/
+      - title: "frage 59 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-59/
+      - title: "frage 60 "
+        url: /fragenkatalog_zum_test_leben_in_deutschland/Fragenkatalog-zum-Test-Leben-in-Deutschland-Frage-60/
+#######################
+php:
+  - title: "php"
+    url: /categories/#php
+    children:
+      - title: "PHP-Arrays "
+        url: /php/PHP-Arrays/
+      - title: "PHP-Sorting-Arrays "
+        url: /php/PHP-Sorting-Arrays/
+      - title: "PHP Loops"
+        url: /php/PHP-Loops/
+      - title: "PHP Functions"
+        url: /php/php-function/
+      - title: "PHP Math Functions"
+        url: /php/php-Math-Functions/
+      - title: "PHP Increment + Decrement"
+        url: /php/PHP-Increment-Decrement/
+      - title: "PHP GET + POST + REQUEST"
+        url: /php/php-GET-POST-$_REQUEST/
+      - title: "PHP Date and Time"
+        url: /php/PHP-PHP-Date-and-Time/
+      - title: " PHP Include + Require Files"
+        url: /php/Include-Require/
+      - title: " PHP Directories"
+        url: /php/PHP-Directories/
+      - title: " File System in php"
+        url: /php/File-System-in-php/
+      - title: " Misc-Functions"
+        url: /php/PHP-Misc-Functions/
+
+  - title: "php-Basic"
+    url: https://fragen.knows1.com/php/php-Basic-bages/
+
+  - title: "Control Structures"
+    url: /php/php-Control-Structures/
+
+  - title: "Variable handling Functions"
+    url: /php/Variable_handling_Functions/
+
+  - title: "Predefined-Variables"
+    url: /php/Predefined-Variables/
+
+
+###
+Basic:
+  - title: "php-Basic"
+    url: https://fragen.knows1.com/php/php-Basic-bages/
+    children:
+      - title: "php"
+        url: /categories/#php
+      - title: "PHP Introduction"
+        url: https://fragen.knows1.com/php/PHP-Introduction/
+      - title: "Basic syntax"
+        url: https://fragen.knows1.com/php/php-Basic-syntax/
+
+
+
+###
+php-Control:
+  - title: "php-Control"
+    url: https://fragen.knows1.com/php/php-Control-Structures/
+    children:
+      - title: "php"
+        url: /categories/#php
+      - title: "if"
+        url: https://fragen.knows1.com/php/php-Control-Structures-if/
+      - title: "else"
+        url: https://fragen.knows1.com/php/php-Control-Structures-else/
+      - title: "elseif/else if "
+        url: https://fragen.knows1.com/php/php-Control-Structures-elseif/
+      - title: "Alternative syntax for control "
+        url: https://fragen.knows1.com/php/php-Control-Structures-Alternative/
+      - title: "while "
+        url: https://fragen.knows1.com/php/php-Control-Structures-while/
+      - title: "do-while "
+        url: https://fragen.knows1.com/php/php-Control-Structures-do-while/
+      - title: "for "
+        url: https://fragen.knows1.com/php/php-Control-Structures-for/
+      - title: "foreach"
+        url: https://fragen.knows1.com/php/php-Control-Structures-foreach/
+      - title: "break "
+        url: https://fragen.knows1.com/php/php-Control-Structures-break/
+      - title: "continue "
+        url: https://fragen.knows1.com/php/php-Control-Structures-continue/
+      - title: "switch "
+        url: https://fragen.knows1.com/php/php-Control-Structures-switch/
+      - title: "declare"
+        url: https://fragen.knows1.com/php/php-Control-Structures-declare/
+      - title: "return "
+        url: https://fragen.knows1.com/php/php-Control-Structures-return/
+      - title: "require "
+        url: https://fragen.knows1.com/php/Include-Require/
+      - title: "include "
+        url: https://fragen.knows1.com/php/Include-Require/
+      - title: "require_once "
+        url: https://fragen.knows1.com/php/Include-Require/
+      - title: "include_once "
+        url: https://fragen.knows1.com/php/Include-Require/
+      - title: "goto "
+        url: https://fragen.knows1.com/php/php-Control-Structures-goto/
+###
+php-handling:
+  - title: "Variable handling Functions"
+    url: /php/Variable_handling_Functions/
+    children:
+      - title: "to php "
+        url: /categories/#php
+      - title: "isset() "
+        url: /php/isset/
+######
+php-Predefined-Variables:
+  - title: "Predefined-Variables"
+    url: /php/Predefined-Variables/
+    children:
+      - title: "to php "
+        url: /categories/#php
+      - title: "php-Superglobals "
+        url: /php/Predefined-Variables-Superglobals/
+      - title: "php-$GLOBALS "
+        url: /php/Predefined-Variables-GLOBALS/
+      - title: "$_​POST+$_​GET+$_​REQUEST "
+        url: /#/
+
+#######################
+docker:
+  - title: "Docker"
+    url: /categories/#docker
+    children:
+      - title: "نظرة عامة "
+        url: /docker/Docker-Overview-Docker/
+      - title: "Docker Engine - Community"
+        url: /docker/Docker-Engine-Community/
+
+#####################
+Symfony:
+  - title: "Symfony"
+    url: https://fragen.knows1.com/tags/#symfony
+    children:
+      - title: "What is Symfony "
+        url: https://fragen.knows1.com/symfony/What-is-Symfony/
+      - title: "إعداد بيئة تطوير Symfony على أنطمة لينكس . "
+        url: https://fragen.knows1.com/symfony/apache2-php-ufw-composer-istall-Symfony/
+
+###
+Debian:
+  - title: "Debian"
+    url: https://fragen.knows1.com/tags/#debian
+    children:
+      - title: "Download-Debian"
+        url: https://fragen.knows1.com/debian/Download-Debian-CD-and-DVD/
+      - title: "How do I backup my entire Decian system?"
+        url: https://fragen.knows1.com/debian/How-do-I-backup-my-entire-Decian-system/
+      - title: "How do I check my md5sum or sha1sum  checksum"
+        url: https://fragen.knows1.com/debian/How-do-I-check-my-md5sum-or-sha1sum-checksum/
+      - title: "burn linux iso to usb"
+        url: https://fragen.knows1.com/debian/How-do-burn-linux-iso-to-usb/
+###
+Atom:
+  - title: "Atom"
+    url: https://fragen.knows1.com/categories/#atom
+    children:
+      - title: "Install Atom on Dbian"
+        url: https://fragen.knows1.com/atom/Install-Atom-on-Dbian/
+      - title: "Install Atom Text Editor on CentOS ?"
+        url: https://fragen.knows1.com/atom/Install-Atom-on-CentOS/
+
+####
+How:
+  - title: "How"
+    url: https://fragen.knows1.com/tags/#how
+    children:
+      - title: " Install Google Chrome On a CentOS "
+        url: https://fragen.knows1.com/how/To-Install-Google-Chrome-On-a-CentOS/
+      - title: "كيفية معرفة إصدار توزيعة لينكس  "
+        url: https://fragen.knows1.com/how/كيفية-معرفة-إصدار-توزيعة-linux-الأساسية/
+      - title: " Add User to Sudoers CentOS "
+        url: https://fragen.knows1.com/how/To-Add-User-to-Sudoers-CentOS-and-Add-User-to-Sudo-Group/
+###
+server:
+  - title: "server"
+    url: https://fragen.knows1.com/tags/#server
+    children:
+      - title: "How To Add and Delete Users on Debian 10 "
+        url: https://fragen.knows1.com/server/How-To-Add-and-Delete-Users-on-Debian-10/
+      - title: "How do I stop sudo su?"
+        url: https://fragen.knows1.com/server/How-do-I-stop-sudo-su/
+      - title: "How to Add and Delete a User to Sudoers ?"
+        url: https://fragen.knows1.com/server/How-to-Add-and-Delete-a-User-to-Sudoers/
+#####
+sql-db:
+  - title: "sql-db"
+    url: https://fragen.knows1.com/categories/#sql-db
+    children:
+      - title: "Overview"
+        url: https://fragen.knows1.com/sql-db/sql-db-Overview/
+#####
+cloud:
+  - title: "cloud"
+    url: https://fragen.knows1.com/tags/#cloud
+    children:
+      - title: "gcloud compute"
+        url: https://fragen.knows1.com/cloud/cloud.google-gcloud-compute/
+      - title: "how to create a virtual machine instance"
+        url: https://fragen.knows1.com/cloud/how-to-create-a-virtual-machine-instance/
