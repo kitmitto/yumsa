@@ -1,0 +1,156 @@
+
+
+- client program .
+
+- write a program .
+
+- script with one of the popular programming languages .
+
+### كيفية تسجيل الدخول لقاعدة البيانات .
+
+يمكن من خلال استخدام حساب الجذر أو من خلال مستخدم لديه صلاحيات الجذر .
+
+### root user
+
+$ sudo su
+
+# mysql -u root -p -h localhost
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 44
+Server version: 10.3.17-MariaDB-0+deb10u1 Debian 10
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]>
+
+### or
+
+$ sudo mysql -u root -p -h localhost
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 45
+Server version: 10.3.17-MariaDB-0+deb10u1 Debian 10
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]>
+
+### -u
+
+يحدد هذا الخيار من هو المستخدم الذي يمكن أن يكون أي مستخدم أخر بعد إنشائه فمثلاً .
+
+### انشاء قاعد بيانات جديدة .
+
+[(none)]> CREATE DATABASE name_database;
+Query OK, 1 row affected (0.000 sec)
+
+### تحديد مستخدم لقاعدة البيانات و كلمة مرور
+
+[(none)]> GRANT ALL ON name_database.* TO 'name_user'@'localhost' IDENTIFIED BY 'password' WITH GRANT OPTION;
+Query OK, 0 rows affected (0.011 sec)
+
+
+### الخروج
+
+
+[(none)]> exit
+
+### تسجيل دخول المستخدم الجديد لقاعد البيانات الجديدة .
+
+- لاحظ لم نستخدم حساب الجذر .
+- -p = password .
+
+- -h =  host name or the IP address of the server.
+ into the server machine, won't need to use the host option
+
+$ mariadb -u name_user -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 59
+Server version: 10.3.17-MariaDB-0+deb10u1 Debian 10
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]>
+
+
+### لاحظ أن المستخدم لا يملك سوى قاعدة البيانات التي أنشأنها لأجله .
+
+
+MariaDB [(none)]> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| name_database      |
++--------------------+
+2 rows in set (0.001 sec)
+
+
+###  إضافة ومعالجة البيانات .
+
+1. دعونا ندخل مستخدمين المستخدم الجذر .
+
+$ sudo mysql -u root -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 62
+Server version: 10.3.17-MariaDB-0+deb10u1 Debian 10
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]>
+
+
+2. سوف ننشئ قاعدة بيانات جديدة .
+
+
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MariaDB connection id is 62
+Server version: 10.3.17-MariaDB-0+deb10u1 Debian 10
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MariaDB [(none)]> CREATE DATABASE knows1_test;
+
+Query OK, 1 row affected (0.000 sec)
+
+MariaDB [(none)]>
+
+3. سوف نشاهد قواعد البيانات المتوفرة لدينا من خلال الأمر التالي :
+
+
+| Database           |
++--------------------+
+| information_schema |
+| knows1             |
+| knows1_test        |
+| mysql              |
+| name_database      |
+| performance_schema |
++--------------------+
+6 rows in set (0.001 sec)
+
+MariaDB [(none)]>
+
+
+4. تحديد قاعدة البيانات التي نريد العمل عليها .
+
+
+MariaDB [(none)]> USE knows1_test;
+Database changed
+MariaDB [knows1_test]>
+
+
+[Creating a Structure]وصلت

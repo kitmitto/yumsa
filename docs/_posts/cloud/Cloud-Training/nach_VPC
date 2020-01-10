@@ -1,0 +1,102 @@
+
+Creating a Virtual Machine in Google Cloud Platform .
+
+يتيح لك Google Compute Engine إنشاء أجهزة افتراضية تشغل أنظمة تشغيل مختلفة ,
+
+
+## Create a virtual .
+
+1-  with the GCP Console .
+2-  with gcloud .
+
+
+
+
+## Open Cloud [Shell](https://cloud.google.com/shell/#how_do_i_get_started)
+
+$ gcloud components update
+
+## معرفة الحساب النشط
+$ gcloud auth list
+
+### معرفة معرف المشروع .
+
+$ gcloud config list project
+
+### معلومات عن اعدادت التثبيت .
+
+$ gcloud info
+
+# Regions and Zones
+
+كل بلد لديه منطقة واحدة أو عدة مناطق , على هذا يجب أن يتوافق عنوان آبي مع المنطقة .
+
+# instance with the GCP Console
+
+- Name : name
+- Region : us-central1 (Iowa)
+- Zone : us-central1-c
+- Machine family : Machine type => 2 vCPUs + 7.5 GB memory
+- Boot Disk : default == Debian GNU/Linux 9 (stretch) + 10 GB
+- Firewall : Allow HTTP or HTTPS traffic.
+- for [SSH](https://cloud.google.com/compute/docs/instances/connecting-to-instance)
+
+
+# instance with gcloud .
+
+## Open Cloud [Shell](https://cloud.google.com/shell/#how_do_i_get_started)
+
+$ gcloud compute instances create --help
+
+$ gcloud compute networks list
+
+$ gcloud compute networks subnets list
+
+$ gcloud compute instances create knows1 --machine-type f1-micro --zone us-central1-a
+
+$ gcloud compute instances create knows1 \
+--image-family  debian-10 \
+--image-project debian-cloud
+
+### $ gcloud auth list
+### $ gcloud config list
+### $ gcloud config set account `ACCOUNT`
+### $ gcloud config set project (NAME)
+
+
+
+
+### gcloud compute images list
+### gcloud compute zones list
+### gcloud compute machine-types list
+
+## في حال كنت تعمل من منطقة واحدة يمكن ضبط منطقة إفتراضية .
+
+$ gcloud compute regions list
+$ $ gcloud compute zones list
+$ gcloud config set compute/zone us-central1-c
+$ gcloud config set compute/region us-central1
+
+#########################################
+
+# How to Install a NGINX web server ?
+
+1- Open SSH .
+
+2- update your OS .
+
+$ sudo apt update -y && sudo apt upgrade -y
+
+$ sudo apt install nginx -y
+
+3- Add External IP to browser window .
+
+Welcome to nginx!
+If you see this page, the nginx web server is successfully installed and working. Further configuration is required.
+
+For online documentation and support please refer to nginx.org.
+Commercial support is available at nginx.com.
+
+Thank you for using nginx.
+
+#########################################
