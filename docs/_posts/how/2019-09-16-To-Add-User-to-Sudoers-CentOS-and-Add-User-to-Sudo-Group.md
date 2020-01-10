@@ -37,7 +37,7 @@ sidebar:
 # adduser username
 {% endhighlight %}
 
-{% include adsense.html %}
+{% include adsens#e.html %}
 
 {% highlight linux linenos %}
 # passwd
@@ -54,7 +54,7 @@ sidebar:
 {% endhighlight %}
 ## Remove a Linux user
 
-{% include adsense.html %}
+
 
 {% highlight linux linenos %}
 $ sudo userdel username
