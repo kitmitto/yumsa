@@ -50,16 +50,7 @@ layout: default
         {% endif %}
         {{ content }}
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<ins class="adsbygoogle"
-     style="display:block; text-align:center;"
-     data-ad-layout="in-article"
-     data-ad-format="fluid"
-     data-ad-client="ca-pub-7601581678975441"
-     data-ad-slot="7864844745"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+
 
 <br>
     <div>
@@ -103,15 +94,7 @@ layout: default
       <div class="grid__wrapper">
 
       </div>
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <ins class="adsbygoogle"
-           style="display:block"
-           data-ad-format="autorelaxed"
-           data-ad-client="ca-pub-7601581678975441"
-           data-ad-slot="8021157533"></ins>
-      <script>
-           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+ 
     </div>
   {% elsif page.id and page.related %}
     <div class="page__related">
