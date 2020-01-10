@@ -36,7 +36,7 @@ hint: its remote counterpart. Integrate the remote changes (e.g.
 hint: 'git pull ...') before pushing again.
 hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 {: .notice }
-{% include adsense.html %}
+
 ### الحل
 
 {% highlight linux linenos %}
