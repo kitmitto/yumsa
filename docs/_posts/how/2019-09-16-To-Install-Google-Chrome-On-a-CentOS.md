@@ -40,7 +40,7 @@ $ wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rp
 $ sudo yum install ./google-chrome-stable_current_*.rpm -y
 {% endhighlight %}
 
-{% include adsense.html %}
+
 
 {% highlight linux linenos %}
 $ rm google-chrome-stable_current_*.rpm
@@ -52,7 +52,7 @@ sudo dnf install google-chrome-stable_current_*.rpm
 
 ## How do I upgrade Google Chrome ?
 
-{% include adsense.html %}
+
 
 {% highlight linux linenos %}
 $ sudo yum update google-chrome-stable
