@@ -37,7 +37,7 @@ sidebar:
 # adduser username
 {% endhighlight %}
 
-{% include adsens#e.html %}
+
 
 {% highlight linux linenos %}
 # passwd
